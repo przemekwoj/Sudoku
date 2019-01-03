@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="589.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przemo.controllers.CreateAccountController">
+   <children>
+      <Button fx:id="okButton" layoutX="217.0" layoutY="167.0" mnemonicParsing="false" onAction="#createAcc" text="OK" />
+      <Text layoutX="98.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username" wrappingWidth="118.837890625" />
+      <TextField fx:id="usernameText" layoutX="96.0" layoutY="52.0" />
+      <Text layoutX="96.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password" />
+      <TextField fx:id="passwordText" layoutX="96.0" layoutY="119.0" />
+      <Button fx:id="backButton" layoutX="44.0" layoutY="531.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Text fx:id="hintText" layoutX="98.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0" />
+   </children>
+</AnchorPane>

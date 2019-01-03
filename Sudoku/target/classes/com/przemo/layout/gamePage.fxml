@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="574.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przemo.controllers.GamePageController">
+   <children>
+      <Rectangle fill="#973b3b" height="152.0" layoutX="4.0" layoutY="4.0" stroke="BLACK" strokeWidth="6.0" width="162.0" />
+      <Button layoutX="552.0" layoutY="535.0" mnemonicParsing="false" onAction="#restart" text="restart" />
+      <AnchorPane layoutX="5.0" layoutY="6.0" prefHeight="148.0" prefWidth="158.0">
+         <children>
+            <StackPane layoutX="53.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec12" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text12" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec13" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text13" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec14" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text14" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec15" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text15" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec16" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text16" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec18" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text18" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec17" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text17" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec19" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text19" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec11" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text11" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <Rectangle fill="#973b3b" height="152.0" layoutX="168.0" layoutY="4.0" stroke="BLACK" strokeWidth="6.0" width="162.0" />
+      <AnchorPane layoutX="169.0" layoutY="6.0" prefHeight="148.0" prefWidth="158.0">
+         <children>
+            <StackPane layoutX="53.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <AnchorPane prefHeight="148.0" prefWidth="158.0">
+                     <children>
+                        <StackPane layoutX="53.0" prefHeight="37.0" prefWidth="32.0">
+                           <children>
+                              <Rectangle fx:id="rec22" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                              <Text fx:id="text22" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="106.0" prefHeight="37.0" prefWidth="32.0">
+                           <children>
+                              <Rectangle fx:id="rec23" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                              <Text fx:id="text23" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+                           <children>
+                              <Rectangle fx:id="rec24" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                              <Text fx:id="text24" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="53.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+                           <children>
+                              <Rectangle fx:id="rec25" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                              <Text fx:id="text25" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="106.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+                           <children>
+                              <Rectangle fx:id="rec26" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                              <Text fx:id="text26" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="53.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+                           <children>
+                              <Rectangle fx:id="rec28" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                              <Text fx:id="text28" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+                           <children>
+                              <Rectangle fx:id="rec27" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                              <Text fx:id="text27" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="106.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+                           <children>
+                              <Rectangle fx:id="rec29" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                              <Text fx:id="text29" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="37.0" prefWidth="32.0">
+                           <children>
+                              <Rectangle fx:id="rec21" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                              <Text fx:id="text21" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <Rectangle fill="#973b3b" height="152.0" layoutX="332.0" layoutY="4.0" stroke="BLACK" strokeWidth="6.0" width="162.0" />
+      <Rectangle fill="#973b3b" height="152.0" layoutX="4.0" layoutY="158.0" stroke="BLACK" strokeWidth="6.0" width="162.0" />
+      <Rectangle fill="#973b3b" height="152.0" layoutX="168.0" layoutY="158.0" stroke="BLACK" strokeWidth="6.0" width="162.0" />
+      <Rectangle fill="#973b3b" height="152.0" layoutX="332.0" layoutY="158.0" stroke="BLACK" strokeWidth="6.0" width="162.0" />
+      <Rectangle fill="#973b3b" height="152.0" layoutX="4.0" layoutY="312.0" stroke="BLACK" strokeWidth="6.0" width="162.0" />
+      <Rectangle fill="#973b3b" height="152.0" layoutX="168.0" layoutY="312.0" stroke="BLACK" strokeWidth="6.0" width="162.0" />
+      <Rectangle fill="#973b3b" height="152.0" layoutX="332.0" layoutY="312.0" stroke="BLACK" strokeWidth="6.0" width="162.0" />
+      <AnchorPane layoutX="333.0" layoutY="6.0" prefHeight="148.0" prefWidth="158.0">
+         <children>
+            <StackPane layoutX="53.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec32" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text32" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec33" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text33" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec34" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text34" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec35" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text35" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec36" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text36" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec38" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text38" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec37" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text37" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec39" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text39" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec31" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text31" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="5.0" layoutY="160.0" prefHeight="148.0" prefWidth="158.0">
+         <children>
+            <StackPane layoutX="53.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec42" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text42" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec43" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text43" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec44" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text44" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec45" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text45" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec46" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text46" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec48" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text48" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec47" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text47" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec49" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text49" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec41" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text41" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="169.0" layoutY="160.0" prefHeight="148.0" prefWidth="158.0">
+         <children>
+            <StackPane layoutX="53.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec52" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text52" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec53" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text53" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec54" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text54" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec55" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text55" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec56" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text56" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec58" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text58" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec57" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text57" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec59" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text59" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec51" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text51" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="333.0" layoutY="160.0" prefHeight="148.0" prefWidth="158.0">
+         <children>
+            <StackPane layoutX="53.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec62" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text62" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec63" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text63" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec64" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text64" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec65" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text65" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec66" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text66" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec68" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text68" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec67" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text67" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec69" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text69" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec61" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text61" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="5.0" layoutY="314.0" prefHeight="148.0" prefWidth="158.0">
+         <children>
+            <StackPane layoutX="53.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec72" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text72" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec73" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text73" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec74" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text74" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec75" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text75" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec76" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text76" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec78" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text78" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec77" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text77" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec79" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text79" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec71" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text71" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="169.0" layoutY="314.0" prefHeight="148.0" prefWidth="158.0">
+         <children>
+            <StackPane layoutX="53.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec82" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text82" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec83" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text83" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec84" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text84" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec85" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text85" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec86" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text86" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec88" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text88" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec87" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text87" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec89" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text89" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec81" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text81" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="333.0" layoutY="314.0" prefHeight="148.0" prefWidth="158.0">
+         <children>
+            <StackPane layoutX="53.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec92" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text92" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec93" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text93" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec94" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text94" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec95" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text95" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="49.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec96" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text96" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="53.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec98" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text98" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec97" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text97" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="106.0" layoutY="99.0" prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec99" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text99" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="37.0" prefWidth="32.0">
+               <children>
+                  <Rectangle fx:id="rec91" fill="#ff931f" height="50.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                  <Text fx:id="text91" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="easyButton" layoutX="525.0" layoutY="33.0" mnemonicParsing="false" onAction="#easylevel" text="easy" />
+      <Button fx:id="mediumButton" layoutX="522.0" layoutY="80.0" mnemonicParsing="false" onAction="#mediumlevel" text="medium" />
+      <Button fx:id="hardButton" layoutX="532.0" layoutY="130.0" mnemonicParsing="false" onAction="#hardlevel" text="hard" />
+      <Text fx:id="clockText" layoutX="31.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="60.00000503659248" />
+   </children>
+</AnchorPane>
