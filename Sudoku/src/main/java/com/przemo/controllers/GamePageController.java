@@ -2,6 +2,9 @@ package com.przemo.controllers;
 
 
 
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Date;
 import java.util.Random;
@@ -12,13 +15,18 @@ import com.przemo.Main;
 import javafx.concurrent.Task;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 public class GamePageController implements Initializable
 {
@@ -64,9 +72,11 @@ public class GamePageController implements Initializable
 	AnchorPane anchorPane;
 	
 	@FXML
+	Button hardButton;
+	@FXML
 	Text clockText;
 	
-	Task<Void> clockThread;
+	Task<Boolean> clockThread;
 	
 	long startTime,actualTime;
 	int minutes,seconds;
@@ -77,6 +87,9 @@ public class GamePageController implements Initializable
 	Text[][] arrayText = new Text[9][9];
 	Rectangle[][] arrayRec = new Rectangle[9][9];
 	String level = "easy";
+	
+	String[] shiftArray = new String[9];
+	String[] temporaryArray = new String[9];
 	
 	boolean finished;
 	
@@ -96,26 +109,25 @@ public class GamePageController implements Initializable
 				{
 					arrayText[i-1][j-1] = (Text) getClass().getDeclaredField(objectNameText).get(this);
 					arrayRec[i-1][j-1] = (Rectangle) getClass().getDeclaredField(objectNameRec).get(this);
-					arrayRec[i-1][j-1].addEventHandler(MouseEvent.MOUSE_CLICKED, eventMouseClickedOnRec);
-				} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+					arrayRec[i-1][j-1].setFill(Color.web("0x865827",1.0)); 				} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
 					e.printStackTrace();
 				}
 			}
 		}
 		
 		createFlashCard(level);
-	
+		
 	}
 	
-	public void restart()
+	public void restart() 
 	{
-		
+	
 		for(int i = 0; i<=8;i++)
 		{
 			for(int j = 0 ; j<=8; j++)
 			{
-				arrayRec[i][j].setFill(Color.web("0xff931f",1.0));
-				arrayRec[i][j].addEventHandler(MouseEvent.MOUSE_CLICKED, eventMouseClickedOnRec);
+				arrayRec[i][j].removeEventHandler(MouseEvent.MOUSE_CLICKED, eventMouseClickedOnRec);
+				arrayRec[i][j].setFill(Color.web("0x865827",1.0)); 
 			}
 		}
 		clearFlashCard();
@@ -126,73 +138,105 @@ public class GamePageController implements Initializable
 	public void createFlashCard(String level)
 	{
 		
-		//startTime = new Date().getTime();
+		//make a flashcard
+		 	makeFirstRow();
+			makeRest(0,3,6);
+			makeRest(0,6,6);
+			makeRest(3,0,8);
+			makeRest(3,3,6);
+			makeRest(3,6,6);
+			makeRest(6,0,8);
+			makeRest(6,3,6);
+			makeRest(6,6,6);
 		finished = false;
 		
 		Random rand = new Random();
 		
-		int promptNumber = 0;
+		int fieldNumber = 0;
 		
 		if(level.equals("easy"))
 		{
-			promptNumber = 60;
+			fieldNumber = 1;
 			
 		}
 		else if(level.equals("medium"))
 		{
-			promptNumber = 30;
+			fieldNumber = 45;
 		}
 		else if(level.equals("hard"))
 		{
-			promptNumber = 20;
-		}
-		Main.count = 81 - promptNumber;
-		
-		while(!(promptNumber == 0))
-		{
-				int i = rand.nextInt(9);
-				int j = rand.nextInt(9);
-				int number = rand.nextInt(9)+1;
-				//check if the is any collision , (if isnt it will assign a value to field)
-				boolean forbid = checkIfForbidden(i,j,number);
-				if(forbid == false)
-				{
-					promptNumber--;
-				}
-				
+			fieldNumber = 65;
 		}
 		
-		//generate clock
-		clockThread = new Task<Void>() {
+		deleteFields(fieldNumber);
+		
+		
+		//generate clock and open Winner window if user wins
+		clockThread = new Task<Boolean>() {
 
 			@Override
-			protected Void call() throws Exception 
+			protected void succeeded() {
+				// TODO Auto-generated method stub
+				super.succeeded();
+				try {
+					openWinnerWindow();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			//generate clock
+			@Override
+			protected Boolean call() throws Exception 
 			{
 				startTime = new Date().getTime();
 				while(!finished)
 				{
+					//chekcing if he finished and check correctness of  fields
 					if(Main.count == 0) { finished = checkCorrectness(); }
+					//calculate clock
 					actualTime = new Date().getTime();
 					long deltaTime = (actualTime - startTime)/1000;
 					seconds = (int) (deltaTime%60);
 					minutes = (int) (deltaTime/60);
 					Thread.sleep(1000);
 					clockText.setText(minutes+" : "+seconds);
+					Main.time = 60*minutes + seconds;
 				}
-				return null;
+				return finished;
 			}
+
+		
+			
 		};
 		
 		Thread th = new Thread(clockThread);
 		th.start();
 	}
 	
+
+
+	private void deleteFields(int fieldNumber)
+	{
+		Random rand = new Random();
+		Main.count = 0;
+		while(fieldNumber >= -1)
+		{
+			int i = rand.nextInt(8);
+			int j = rand.nextInt(8);
+			if(!arrayText[i][j].getText().equals("")) {Main.count++;}
+			arrayText[i][j].setText("");
+			arrayRec[i][j].setFill(Color.web("0xff931f",1.0));
+			arrayRec[i][j].addEventHandler(MouseEvent.MOUSE_CLICKED, eventMouseClickedOnRec);
+			fieldNumber--;
+		}
+	}
+
 	//logic depends on my Arrays
 	boolean checkIfForbidden(int i,int j,int number)
 	{
 		boolean forbidden = false;
 		//check if field is free
-		if(!arrayText[i][j].getText().equals("")) {forbidden = true;}
 		//check vertical
 		if(!forbidden)
 		{
@@ -313,20 +357,21 @@ public class GamePageController implements Initializable
 		}
 	}
 	
-	public void easylevel()
+	public void easylevel() throws IOException
 	{
+		
 		level = "easy";
 		restart();
 	}
 	
-	public void mediumlevel()
+	public void mediumlevel() throws IOException
 	{
 		level = "medium";
 		restart();
 
 	}
 	
-	public void hardlevel()
+	public void hardlevel() throws IOException
 	{
 		level = "hard";
 		restart();
@@ -365,7 +410,7 @@ public class GamePageController implements Initializable
 					}
 				}
 			
-			if(event.getCode().toString().equals("BACK_SPACE") || actualText.getText().equals("") || actualText.getText().equals(null))
+			if(event.getCode().toString().equals("BACK_SPACE") && !actualText.getText().equals(""))
 			{
 				Main.count++;
 				actualText.setText(null);
@@ -388,7 +433,7 @@ public class GamePageController implements Initializable
 								
 				
 		}
-		return forbidden;
+		return !forbidden;
 	}
 
 	boolean fordibbenField(int i,int j)
@@ -494,8 +539,118 @@ public class GamePageController implements Initializable
 						}
 					}
 				}
-	System.out.println(forbidden);
 	return forbidden;
 	}
+	
+	public boolean allSet()
+	{
+		boolean allAreSet = true;
+		int h  = 0;
+		for(int i = 0; i <= 8; i++)
+		{
+			for(int j = 0; j <= 8; j++)
+			{
+				h++;
+				if(arrayText[i][j].getText().equals(""))
+				{
+					
+					allAreSet = false;
+					break;
+				}
+			}
+		}
+		System.out.println(h);
 
+		return allAreSet;
+	}
+	
+	private void makeRest(int a , int b,int shift)
+	{
+		
+		shiftOperation(shift);
+		int count = 0;
+		for(int i = a ; i<=a+2 ; i++)
+		{
+			for(int j = b ; j<=b+2;j++)
+			{
+				arrayText[i][j].setText(shiftArray[count]);
+				count++;
+			}
+		}
+			
+	}
+
+	private void shiftOperation(int shift) 
+	{
+		
+		while(shift!=0)
+		{
+		for(int i = 1; i<=8;i++)
+		{
+			temporaryArray[i] = shiftArray[i-1];
+		}
+		temporaryArray[0]=shiftArray[8];
+		for(int i = 0; i<=8;i++)
+		{
+			shiftArray[i] = temporaryArray[i];
+		}
+		shift--;
+		}
+	}
+
+	public void makeFirstRow()
+	{	
+		boolean forbidden = true;
+		
+		Random rand = new Random();
+		int number = 0;
+		int shiftArrayElement = 0;
+		for(int i = 0 ; i<=2 ; i++)
+		{
+			for(int j = 0 ; j<=2;j++)
+			{
+				while(forbidden)
+				{
+				number = rand.nextInt(9) + 1;
+				forbidden = checkIfOk(number);
+				}
+				arrayText[i][j].setText(Integer.toString(number));
+				shiftArray[shiftArrayElement] = Integer.toString(number);
+				shiftArrayElement++;
+				forbidden = true;
+			}
+		}
+	}
+	
+	public boolean checkIfOk(int number) 
+	{
+		boolean forbidden = false;
+		
+		for(int i = 0 ; i<=2 ; i++)
+		{
+			for(int j = 0 ; j<=2;j++)
+			{
+				if(arrayText[i][j].getText().toString().equals(Integer.toString(number)))
+				{
+					
+					forbidden = true;
+				}
+			}
+		}
+		return forbidden;
+	}
+	
+	public void openWinnerWindow() throws IOException
+	{
+		Stage stage = (Stage) hardButton.getScene().getWindow();
+		URL url = new File("src/main/java/com/przemo/layout/WinnerPage.fxml").toURL();
+		Parent root = FXMLLoader.load(url);
+		Scene scene = new Scene(root);
+		String s = "com/przemo/layout/application.css";
+		scene.getStylesheets().add(s);
+		stage.setScene(scene);
+		stage.setResizable(false);
+		stage.show();
+
+	}
 }

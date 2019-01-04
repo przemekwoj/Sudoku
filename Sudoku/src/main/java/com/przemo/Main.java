@@ -20,6 +20,7 @@ public class Main extends Application {
 	public static String password;
 	public static ArrayList<Integer> playerList;
 	public static int count;
+	public static int time;
 	
 	@Override
 	public void start(Stage primaryStage) 
