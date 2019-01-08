@@ -579,7 +579,7 @@ public class GamePageController implements Initializable
 		}
 			
 	}
-
+	//shift rows of flashcard
 	private void shiftOperation(int shift) 
 	{
 		

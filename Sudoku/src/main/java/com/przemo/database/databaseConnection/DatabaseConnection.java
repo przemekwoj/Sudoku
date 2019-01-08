@@ -20,8 +20,8 @@ public class DatabaseConnection
 			fromProviders(PojoCodecProvider.builder().automatic(true).build()));
 	static MongoClient client = MongoClients.create("mongodb://przemek:przemek123@czujnik-shard-00-00-khw2l.mongodb.net:27017,czujnik-shard-00-01-khw2l.mongodb.net:27017,czujnik-shard-00-02-khw2l.mongodb.net:27017/test?ssl=true&replicaSet=czujnik-shard-0&authSource=admin&retryWrites=true");
     static MongoDatabase database = client.getDatabase("players_db").withCodecRegistry(pojoCodecRegistry);
-	static MongoCollection<Document> collectionDocument = database.getCollection("players");
-	static MongoCollection<Player> collectionClass = database.getCollection("players", Player.class);
+	static MongoCollection<Document> collectionDocument;
+	static MongoCollection<Player> collectionClass ;
 	
 	public static MongoClient getMongoClient()
     {
@@ -35,11 +35,11 @@ public class DatabaseConnection
 	
 	public static MongoCollection<Document> getCollectionDocument()
 	{
-		return collectionDocument;
+		return database.getCollection("players");
 	}
 	
 	public static MongoCollection<Player> getCollectionClass()
 	{
-		return collectionClass;
+		return database.getCollection("players", Player.class);
 	}
 }

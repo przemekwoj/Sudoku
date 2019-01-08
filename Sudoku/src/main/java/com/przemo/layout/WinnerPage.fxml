@@ -4,12 +4,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="336.0" prefWidth="313.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="com.przemo.controllers.WinnerPageController">
+<AnchorPane prefHeight="336.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przemo.controllers.WinnerPageController">
    <children>
       <Button fx:id="okButton" layoutX="108.0" layoutY="258.0" mnemonicParsing="false" onAction="#okButtonAction" prefHeight="25.0" prefWidth="85.0" text="ok" />
       <Text fx:id="usernameText" layoutX="131.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" />
       <Text fx:id="timeText" layoutX="134.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Button layoutX="108.0" layoutY="209.0" mnemonicParsing="false" text="BEST TABLE" />
+      <Button layoutX="108.0" layoutY="209.0" mnemonicParsing="false" onAction="#showTable" text="BEST TABLE" />
    </children>
 </AnchorPane>

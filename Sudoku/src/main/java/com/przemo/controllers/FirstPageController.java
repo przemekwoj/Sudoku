@@ -116,6 +116,7 @@ public class FirstPageController
 	{
 		Stage stage = (Stage) guestButton.getScene().getWindow();
 		URL url = new File("src/main/java/com/przemo/layout/gamePage.fxml").toURL();
+		//URL url = new File("src/main/java/com/przemo/layout/WinnerPage.fxml").toURL();
 		Parent root = FXMLLoader.load(url);
 		Scene scene = new Scene(root);
 		String s = "com/przemo/layout/application.css";
